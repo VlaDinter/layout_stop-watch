@@ -1,0 +1,56 @@
+.clock__hand--minute, .clock__hand--second {
+  width: 10px;
+  border-radius: 25%;
+  position: absolute;
+  left: 245px; }
+
+h1 {
+  text-align: center; }
+
+.clock {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative; }
+
+.clock__center {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #4b99aa;
+  position: absolute;
+  top: 237.5px;
+  left: 237.5px;
+  z-index: 2; }
+
+.clock__hand--minute {
+  height: 200px;
+  background-color: #d15559;
+  top: 50px;
+  z-index: 1;
+  -webkit-animation: click-clock 3600s linear infinite;
+          animation: click-clock 3600s linear infinite; }
+
+.clock__hand--second {
+  height: 250px;
+  background-color: #4b99aa;
+  -webkit-animation: click-clock 60s linear infinite;
+          animation: click-clock 60s linear infinite; }
+
+@-webkit-keyframes click-clock {
+  from {
+    transform: rotate(0);
+    transform-origin: bottom; }
+  to {
+    transform: rotate(360deg);
+    transform-origin: bottom; } }
+
+@keyframes click-clock {
+  from {
+    transform: rotate(0);
+    transform-origin: bottom; }
+  to {
+    transform: rotate(360deg);
+    transform-origin: bottom; } }
+
+/*# sourceMappingURL=clock.css.map */
