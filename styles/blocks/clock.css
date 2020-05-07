@@ -1,9 +1,3 @@
-.clock__hand--minute, .clock__hand--second {
-  width: 10px;
-  border-radius: 25%;
-  position: absolute;
-  left: 245px; }
-
 h1 {
   text-align: center; }
 
@@ -21,6 +15,11 @@ h1 {
     top: 237.5px;
     left: 237.5px;
     z-index: 2; }
+  .clock__hand {
+    width: 10px;
+    border-radius: 25%;
+    position: absolute;
+    left: 245px; }
   .clock__hand--minute {
     height: 200px;
     background-color: #d15559;
